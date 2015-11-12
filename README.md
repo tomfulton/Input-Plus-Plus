@@ -2,9 +2,7 @@
 
 # Input Plus Plus for Umbraco
 
-Input Plus Plus for Umbraco is a property editor that is used for maintaining common SEO-related information for a page. It gives users a visual representation of how the page would look on a Google search result page and hints to when the title and description is too long, with optional validation.
-
-![Input Plus Plus](https://raw.githubusercontent.com/epiphanysearch/input-plus-plus/master/images/example1.gif)
+Input Plus Plus for Umbraco is a property editor prepending and appending content to inputs.
 
 ## Recent Changes
 
@@ -20,7 +18,7 @@ Install the latest version through NuGet.
 Install-Package Epiphany.InputPlusPlus
 ```
 
-After installing via Nuget, create a property of type **Input Plus Plus** and include on your page. 
+After installing via Nuget, create a property of type **Input++** and include on your page. 
 
 ![Property editor options](https://raw.githubusercontent.com/epiphanysearch/input-plus-plus/master/images/property-editor-options.png)
 
