@@ -1,6 +1,6 @@
 {
   "name": "Epiphany.InputPlusPlus",
-  "version": "0.2.6",
+  "version": "0.1.0",
   "description": "Extend your inputs with prepends and appends.",
   "license": "MIT",
   "licenseUrl": "http://opensource.org/licenses/MIT",
