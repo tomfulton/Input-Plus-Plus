@@ -1,0 +1,27 @@
+﻿<div ng-controller="EpiphanyInputPlusPlusConfigController">
+    
+    <p>
+        Click on the prepend/append section of the Input box to choose the content of the content.
+    </p>
+    
+    <p>Empty boxes are not rendered.</p>
+
+    <p class="help-block">Preview</p>
+    <div class="input-preview input-prepend input-append">
+        <span class="add-on" ng-bind-html-unsafe="getPrepend()" ng-click="pickIcon('prepend')"></span>
+        <input class="inputplusplustextbox {{getAdditionalClasses()}}" type="text" placeholder="{{model.placeholder}}">
+        <span class="add-on" ng-bind-html-unsafe="getAppend()" ng-click="pickIcon('append')"></span>
+    </div>
+    
+    <hr/>
+
+    <label class="control-label">Placeholder Text</label>
+    <div class="controls"><input type="text" ng-model="model.placeholder"/></div> <br/>
+
+    <label class="control-label">Size</label>
+    <div class="controls"><select ng-model="model.size" ng-options="size.label for size in sizes"></select></div>
+    
+    <label class="control-label">Use Font Awesome</label>
+    <div class="controls"><input name="fontAwesome" type="checkbox" ng-model="model.value.fontAwesome" /></div> <br />
+
+</div>

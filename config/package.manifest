@@ -1,0 +1,59 @@
+// ReSharper disable once WrongExpressionStatement
+{
+    propertyEditors: [
+            {
+                alias: "Epiphany.InputPlusPlus",
+                name: "Input++",
+                editor:
+                {
+                    view: "~/App_Plugins/Epiphany.InputPlusPlus/views/textbox.html"
+                },
+
+                prevalues: {
+                    fields: [
+                        {
+                            label: 'Configuration',
+                            key: 'settings',
+                            view: '~/App_Plugins/Epiphany.InputPlusPlus/views/textbox.config.html'
+                        },
+                        {
+                            label: 'Prepended Text',
+                            description: 'Appears before the input',
+                            key: 'prepend',
+                            view: 'textstring'
+                        },
+                        {
+                            label: 'Appended Text',
+                            description: 'Appears after the input',
+                            key: 'append',
+                            view: 'textstring'
+                        },
+                        {
+                            label: 'Placeholder Text',
+                            description: 'Text that appears in the textbox',
+                            key: 'placeholder',
+                            view: 'textstring'
+                        },
+                        {
+                            label: 'Additional classes',
+                            description: 'Seperate with a space. Classes here are added to the input. See Bootstrap 2.3 docs for some sizes.',
+                            key: 'additionalClasses',
+                            view: 'textstring'
+                        },
+                        {
+                            label: 'Inline Styles',
+                            description: 'If set, will be added as a style attribute to the input',
+                            key: 'inlineStyles',
+                            view: 'textstring'
+                        }
+                    ]
+                },
+            }
+        ],
+
+        //array of files we want to inject into the application on app_start
+        javascript:
+    [
+        '~/App_Plugins/Epiphany.InputPlusPlus/js/epiphany.input-plus-plus.js'
+    ]
+}

@@ -1,0 +1,9 @@
+﻿<div ng-controller="EpiphanyInputPlusPlusController">
+
+    <div ng-class="getContainerClasses()">
+        <span ng-show="model.config.prepend.length" class="add-on" ng-bind-html-unsafe="model.config.prepend"></span>
+        <input class="inputplusplustextbox {{additionalClasses}}" style="{{model.config.inlineStyles}}" type="text" placeholder="{{model.config.placeholder}}" ng-model="model.value" />
+        <span ng-show="model.config.append.length" class="add-on" ng-bind-html-unsafe="model.config.append"></span>
+    </div>
+
+</div>

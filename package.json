@@ -1,0 +1,36 @@
+{
+  "name": "Epiphany.InputPlusPlus",
+  "version": "0.2.6",
+  "description": "Extend your inputs with prepends and appends.",
+  "license": "MIT",
+  "licenseUrl": "http://opensource.org/licenses/MIT",
+  "author": {
+    "name": "Ryan McDonough",
+    "email": "me@ryanmcdonough.co.uk",
+    "url": "https://ryanmcdonough.co.uk"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/epiphanysearch/Input-Plus-Plus.git"
+  },
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-bump": "*",
+    "grunt-contrib-clean": "*",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-copy": "*",
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-dotnet-assembly-info": "*",
+    "grunt-karma": "*",
+    "grunt-mkdir": "*",
+    "grunt-msbuild": "*",
+    "grunt-nuget": "*",
+    "grunt-sass": "*",
+    "grunt-template": "*",
+    "grunt-umbraco-package": "*",
+    "load-grunt-tasks": "*",
+    "time-grunt": "*",
+	"node-sass": "*"
+  }
+}
