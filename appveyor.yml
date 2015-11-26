@@ -1,10 +1,17 @@
-# Test against this version of Node.js
-environment:
-  nodejs_version: "5.1.0"
+# version format
+version: 1.0.{build}
 
-# Install scripts. (runs after repo cloning)
+# UMBRACO_PACKAGE_PRERELEASE_SUFFIX will only be used for Release builds
+# example UMBRACO_PACKAGE_PRERELEASE_SUFFIX=beta
 install:
-  # Get the latest stable version of Node.js or io.js
-  - ps: Install-Product node $env:nodejs_version
-  # install modules
-  - npm install
+  - cmd: npm install
+  - cmd: set UMBRACO_PACKAGE_PRERELEASE_SUFFIX=
+  - cmd: set UMBRACO_PACKAGE_MIN_VERSION=7.3.0
+  - cmd: Build.cmd
+
+# to disable automatic builds
+build: off
+
+artifacts:
+  - path: Build\pkg\nuget\*.nupkg
+You can do a lot of build configuration using the 

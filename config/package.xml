@@ -16,7 +16,7 @@
       <name><%= author %></name>
       <website><%= authorUrl %></website>
     </author>
-    <readme><![CDATA[Check out github.com/ryanlewis/seo-metadata for full documentation]]></readme>
+    <readme><![CDATA[Check out github.com/epiphanysearch/Input-Plus-Plus for full documentation]]></readme>
   </info>
   <DocumentTypes />
   <Templates />
