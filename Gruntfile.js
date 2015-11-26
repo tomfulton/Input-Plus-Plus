@@ -4,13 +4,19 @@ module.exports = function (grunt) {
 
   //cant load this with require
   grunt.loadNpmTasks('grunt-contrib-jshint');
+  
 
   if (grunt.option('target') && !grunt.file.isDir(grunt.option('target'))) {
     grunt.fail.warn('The --target option specified is not a valid directory');
   }
     
+    
+  var pkg = grunt.file.readJSON('package.json');
+  var version = process.env.APPVEYOR_BUILD_VERSION || pkg.version;
+  
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
+    version: version,
     dest: grunt.option('target') || 'build/dist',
     basePath: 'App_Plugins/<%= pkg.name %>',
 
@@ -107,7 +113,7 @@ module.exports = function (grunt) {
         options: {
           data: {
             name:        '<%= pkg.name %>',
-            version:     '<%= pkg.version %>',
+            version:     '<%= version %>',
             author:      '<%= pkg.author.name %>',
             description: '<%= pkg.description %>'
           }
