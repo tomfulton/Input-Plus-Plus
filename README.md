@@ -4,6 +4,11 @@
 
 Input Plus Plus for Umbraco is a property editor prepending and appending content to inputs.
 
+##Build Status
+
+[![Build status](https://ci.appveyor.com/api/projects/status/noypkb67ri0ns83m?svg=true)](https://ci.appveyor.com/project/ryanmcdonough/input-plus-plus)
+
+
 ## Recent Changes
 
 **0.1.0**
