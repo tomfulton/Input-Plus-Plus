@@ -11,9 +11,10 @@ build: off
 
 artifacts:
   - path: Build\pkg\nuget\*.nupkg
+    name: NugetPackage
   
 deploy:
 - provider: NuGet
   api_key:
     secure: 0PXkixJGj0XqmLwekrATwmrMAyCZ75qa4Qnb4LD5ABRg63wrzAWO/KEaVpBOQUps
-  artifact: **\*.nupkg
+  artifact: NugetPackage
