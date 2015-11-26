@@ -1,6 +1,7 @@
 @echo off
 
 REM Restore dependencies
+call npm install -g grunt-cli
 call npm install
 nuget restore app\Epiphany.InputPlusPlus\Epiphany.InputPlusPlus.sln
 
