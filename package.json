@@ -22,7 +22,6 @@
     "grunt-contrib-jshint": "*",
     "grunt-contrib-watch": "*",
     "grunt-dotnet-assembly-info": "*",
-    "grunt-karma": "*",
     "grunt-mkdir": "*",
     "grunt-msbuild": "*",
     "grunt-nuget": "*",
@@ -31,6 +30,6 @@
     "grunt-umbraco-package": "*",
     "load-grunt-tasks": "*",
     "time-grunt": "*",
-	"node-sass": "*"
+	  "node-sass": "*"
   }
 }
