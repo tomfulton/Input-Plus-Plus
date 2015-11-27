@@ -140,18 +140,19 @@ module.exports = function (grunt) {
     },
 
     umbracoPackage: {
-      options: {
-        name:        '<%= pkg.name %>',
-        version:     '<%= pkg.version %>',
-        url:         '<%= pkg.repository.url %>',
-        license:     '<%= pkg.license %>',
-        licenseUrl:  '<%= pkg.licenseUrl %>',
-        author:      '<%= pkg.author.name %>',
-        authorUrl:   '<%= pkg.author.url %>',
-        manifest:    'config/package.xml',
-        readme:      'README.md',
-        sourceDir:   'build/tmp/umbraco',
-        outputDir:   'build/pkg/umbraco',
+      dist: {
+        src: 'build/tmp/umbraco',
+        dest: 'build/pkg/umbraco',
+        options: {
+          name:        '<%= pkg.name %>',
+          version:     '<%= pkg.version %>',
+          url:         '<%= pkg.repository.url %>',
+          license:     '<%= pkg.license %>',
+          licenseUrl:  '<%= pkg.licenseUrl %>',
+          author:      '<%= pkg.author.name %>',
+          authorUrl:   '<%= pkg.author.url %>',
+          readme:      'Check out github.com/epiphanysearch/Input-Plus-Plus for full documentation'
+        }
       }
     },
 
